@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – Vivific Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vivific Ltd is a software and architecture consulting practice helping organisations design and deliver modern platforms." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <div class="logo-text-main">Vivific Ltd</div>
+            <div class="logo-text-sub">Software & Architecture Consulting</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html" class="nav-active">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero">
+        <div class="two-col">
+          <div>
+            <div class="section-heading-row">
+              <h1 class="section-title">About Vivific</h1>
+              <p class="section-subtitle">
+                We are a consulting studio focused on clear thinking, strong architecture,
+                and practical delivery support for modern software systems.
+              </p>
+            </div>
+
+            <p style="font-size:0.92rem; color:var(--muted); margin-bottom:1rem;">
+              Vivific exists to help organisations move confidently through complex technology decisions.
+              We have experience across public sector programmes, financial services platforms, and enterprise integration work.
+            </p>
+            <p style="font-size:0.92rem; color:var(--muted); margin-bottom:1rem;">
+              Our approach is collaborative and calm. We work closely with delivery teams, internal architects,
+              and vendors – simplifying where possible, highlighting trade-offs clearly, and documenting decisions in a way that future teams can follow.
+            </p>
+
+            <div class="pill-row" style="margin-top:0.8rem;">
+              <div class="pill">Software & solution architecture</div>
+              <div class="pill">Cloud & data platforms</div>
+              <div class="pill">Integration & streaming</div>
+              <div class="pill">Public sector & enterprise</div>
+            </div>
+          </div>
+
+          <aside class="card">
+            <h3>How we like to work</h3>
+            <ul>
+              <li><strong>Context first.</strong> We start with goals, constraints, and existing systems.</li>
+              <li><strong>Simple where possible.</strong> We avoid complexity that teams cannot support.</li>
+              <li><strong>Close to delivery.</strong> Architecture only helps when it’s connected to what is being built.</li>
+              <li><strong>Transparent decisions.</strong> We document trade-offs and choices so they remain understandable later.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Vivific Ltd. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
