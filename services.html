@@ -1,131 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Vivific Ltd</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Vivific Ltd</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <div class="container nav-wrapper">
-            <a href="index.html" class="logo">
-                <div class="logo-mark">V</div>
-                <span>Vivific Ltd<small>Software & Architecture Consulting</small></span>
-            </a>
-            <button class="menu-toggle">☰</button>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html" class="active">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <div class="logo-title">Vivific Ltd</div>
+            <div class="logo-subtitle">Software & Architecture Consulting</div>
+          </div>
         </div>
-    </header>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section>
-            <div class="container">
-                <span class="kicker">Our Expertise</span>
-                <h1>Modular services for<br>complex programmes.</h1>
-                <p style="max-width: 600px;">
-                    We engage at different stages of the software lifecycle. Whether you need an initial technical strategy, 
-                    hands-on solution design, or support getting a distressed project over the line, we can help.
-                </p>
-
-                <div class="card-grid">
-                    <article class="card">
-                        <h3>Architecture Discovery</h3>
-                        <p>We help you understand the problem space before writing code. We audit existing estates and define the target architecture.</p>
-                        <ul>
-                            <li>Estate Audits & Assessment</li>
-                            <li>Technology Selection</li>
-                            <li>Cost/Benefit Analysis</li>
-                            <li>Stakeholder Management</li>
-                        </ul>
-                    </article>
-
-                    <article class="card">
-                        <h3>Solution Architecture</h3>
-                        <p>Detailed design for complex systems. We produce high-level designs (HLD) and low-level specifications that developers can actually use.</p>
-                        <ul>
-                            <li>Microservices Design</li>
-                            <li>API Specifications (OpenAPI)</li>
-                            <li>Security Architecture</li>
-                            <li>Data Modeling</li>
-                        </ul>
-                    </article>
-
-                    <article class="card">
-                        <h3>Cloud & Platform</h3>
-                        <p>Building the factory that builds the software. We design secure, automated cloud environments on AWS, Azure, or GCP.</p>
-                        <ul>
-                            <li>Landing Zone Design</li>
-                            <li>Infrastructure as Code (Terraform)</li>
-                            <li>CI/CD Pipeline Strategy</li>
-                            <li>Containerization (Kubernetes)</li>
-                        </ul>
-                    </article>
-
-                    <article class="card">
-                        <h3>Integration & Data</h3>
-                        <p>Connecting systems in real-time. We move away from batch processing to event-driven architectures and streaming data.</p>
-                        <ul>
-                            <li>Event-Driven Architecture</li>
-                            <li>Kafka & Streaming Platforms</li>
-                            <li>API Gateway Strategy</li>
-                            <li>Legacy Integration</li>
-                        </ul>
-                    </article>
-
-                    <article class="card">
-                        <h3>Programme Support</h3>
-                        <p>Bridging the gap between product management and engineering. We act as the "technical conscience" of the delivery team.</p>
-                        <ul>
-                            <li>Technical Leadership</li>
-                            <li>Vendor Assurance</li>
-                            <li>Recruitment Support</li>
-                            <li>Agile Ceremonies</li>
-                        </ul>
-                    </article>
-
-                    <article class="card">
-                        <h3>Advisory Retainers</h3>
-                        <p>On-demand access to senior architectural advice for CTOs and Heads of Engineering without the full-time headcount.</p>
-                        <ul>
-                            <li>Strategic Reviews</li>
-                            <li>Architecture Boards</li>
-                            <li>Mentoring Teams</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Vivific Ltd. All rights reserved.</p>
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Services</h2>
+          <p>Our services are modular and flexible. We can engage at any stage of your project, from initial discovery through to implementation and beyond.</p>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="styles.js"></script> <!-- Optional logic can go here or inline -->
-    <script>
-        const toggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('.nav-links');
-        toggle.addEventListener('click', () => nav.classList.toggle('active'));
-    </script>
+    <section class="services">
+      <div class="container">
+        <div class="cards">
+          <div class="card service-card">
+            <div class="card-icon">🔍</div>
+            <h3>Architecture Discovery</h3>
+            <p>We help organisations understand their current state and define their future technology direction through structured discovery workshops.</p>
+            <ul>
+              <li>Current state assessment</li>
+              <li>Stakeholder interviews and workshops</li>
+              <li>Technology landscape analysis</li>
+              <li>Gap analysis and recommendations</li>
+              <li>Architecture vision and principles</li>
+            </ul>
+          </div>
+          <div class="card service-card">
+            <div class="card-icon">📐</div>
+            <h3>Solution Design</h3>
+            <p>We design robust, scalable solutions that address your specific business challenges while considering technical constraints and opportunities.</p>
+            <ul>
+              <li>System architecture design</li>
+              <li>Component and service identification</li>
+              <li>Integration patterns and approaches</li>
+              <li>Security and compliance considerations</li>
+              <li>Technology selection and evaluation</li>
+            </ul>
+          </div>
+          <div class="card service-card">
+            <div class="card-icon">☁️</div>
+            <h3>Cloud Consulting</h3>
+            <p>We help organisations leverage cloud technologies effectively, from initial migration strategies to optimisation of existing cloud environments.</p>
+            <ul>
+              <li>Cloud strategy and roadmap</li>
+              <li>Migration planning and execution</li>
+              <li>Multi-cloud architecture design</li>
+              <li>Cost optimisation</li>
+              <li>Cloud governance and compliance</li>
+          </div>
+          <div class="card service-card">
+            <div class="card-icon">🔗</div>
+            <h3>Integration & Data Engineering</h3>
+            <p>We design and implement integration solutions that connect disparate systems and unlock the value of your data assets.</p>
+            <ul>
+              <li>API design and implementation</li>
+              <li>Data architecture and modelling</li>
+              <li>ETL and data pipeline development</li>
+              <li>Real-time data streaming solutions</li>
+              <li>Data governance frameworks</li>
+            </ul>
+          </div>
+          <div class="card service-card">
+            <div class="card-icon">🚀</div>
+            <h3>Delivery Support</h3>
+            <p>We provide hands-on support to ensure your technology projects deliver value and meet quality standards.</p>
+            <ul>
+              <li>Technical delivery leadership</li>
+              <li>Quality assurance frameworks</li>
+              <li>Team capability building</li>
+              <li>Agile delivery practices</li>
+              <li>Technical risk management</li>
+            </ul>
+          </div>
+          <div class="card service-card">
+            <div class="card-icon">📊</div>
+            <h3>Digital Transformation</h3>
+            <p>We guide organisations through their digital transformation journey, aligning technology initiatives with business objectives.</p>
+            <ul>
+              <li>Digital strategy development</li>
+              <li>Business process re-engineering</li>
+              <li>Change management and adoption</li>
+              <li>Performance measurement</li>
+              <li>Continuous improvement frameworks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Vivific Ltd</div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="current-year"></span> Vivific Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    mobileMenuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
