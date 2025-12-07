@@ -1,106 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Vivific Ltd</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Vivific Ltd</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <div class="container nav-wrapper">
-            <a href="index.html" class="logo">
-                <div class="logo-mark">V</div>
-                <span>Vivific Ltd<small>Software & Architecture Consulting</small></span>
-            </a>
-            <button class="menu-toggle">☰</button>
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" class="active">Contact</a>
-            </nav>
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <div class="logo">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <div class="logo-title">Vivific Ltd</div>
+            <div class="logo-subtitle">Software & Architecture Consulting</div>
+          </div>
         </div>
-    </header>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section>
-            <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
-                    
-                    <!-- Left: Info -->
-                    <div>
-                        <span class="kicker">Get in Touch</span>
-                        <h1>Let's discuss your next project.</h1>
-                        <p>
-                            Whether you have a clear brief or just a vague problem statement, we're happy to chat. 
-                            We can discuss timelines, procurement routes, and how we might support your team.
-                        </p>
-                        
-                        <div style="margin-top: 2rem;">
-                            <h4 style="margin-bottom: 0.5rem;">Registered Office</h4>
-                            <p>Vivific Ltd<br>Milton Keynes<br>United Kingdom</p>
-                            
-                            <h4 style="margin-bottom: 0.5rem; margin-top: 1.5rem;">Social</h4>
-                            <a href="#" style="color: var(--accent); border-bottom: 1px solid var(--accent);">Connect on LinkedIn &rarr;</a>
-                        </div>
-                    </div>
-
-                    <!-- Right: Form -->
-                    <div>
-                        <form action="mailto:hello@example.com" method="post" enctype="text/plain" class="card" style="box-shadow: none; background: #151b2b;">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Jane Doe" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Work Email</label>
-                                <input type="email" id="email" name="email" placeholder="jane@company.com" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="org">Organisation</label>
-                                <input type="text" id="org" name="org" placeholder="Company Ltd">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">How can we help?</label>
-                                <textarea id="message" name="message" rows="5" placeholder="Tell us a bit about the project..." required></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                            <p style="font-size: 0.8rem; margin-top: 1rem; text-align: center;">We usually respond within 2 working days.</p>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Vivific Ltd. All rights reserved.</p>
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get in Touch</h2>
+          <p>We'd love to hear about your project and discuss how we can help you achieve your goals.</p>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        const toggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('.nav-links');
-        toggle.addEventListener('click', () => nav.classList.toggle('active'));
-    </script>
+    <section class="contact">
+      <div class="container">
+        <div class="contact-info">
+          <div class="contact-details">
+            <h3>Contact Information</h3>
+            <p><strong>Location:</strong><br>
+            Vivific Ltd<br>
+            Milton Keynes<br>
+            United Kingdom</p>
+            <p><strong>Email:</strong><br>
+            <a href="mailto:hello@vivific.co.uk">hello@vivific.co.uk</a></p>
+            <p><strong>LinkedIn:</strong><br>
+            <a href="#" target="_blank">linkedin.com/company/vivific</a></p>
+            <p><strong>Response Time:</strong><br>
+            We aim to respond to all inquiries within 2 business days.</p>
+          </div>
+          <div class="contact-form">
+            <h3>Send us a message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="organization">Organization</label>
+                <input type="text" id="organization" name="organization">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">Vivific Ltd</div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="current-year"></span> Vivific Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    mobileMenuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+    });
+
+    // Form submission handler
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // In a real implementation, you would send the form data to a server here
+      // For this demo, we'll just show a success message
+      
+      const formElements = this.elements;
+      let formData = {};
+      
+      for (let i = 0; i < formElements.length; i++) {
+        if (formElements[i].type !== 'submit') {
+          formData[formElements[i].name] = formElements[i].value;
+        }
+      }
+      
+      // Show success message
+      const formContainer = document.querySelector('.contact-form');
+      formContainer.innerHTML = `
+        <h3>Thank you for your message!</h3>
+        <p>We've received your inquiry and will get back to you within 2 business days.</p>
+        <button class="btn btn-primary" onclick="location.reload()">Send another message</button>
+      `;
+    });
+  </script>
 </body>
 </html>
