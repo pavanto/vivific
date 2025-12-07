@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Vivific Ltd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Vivific Ltd to discuss software architecture, cloud, integration, and digital delivery projects." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="nav">
+        <div class="nav-left">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <div class="logo-text-main">Vivific Ltd</div>
+            <div class="logo-text-sub">Software & Architecture Consulting</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="nav-active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section--hero">
+        <div class="section-heading-row">
+          <h1 class="section-title">Contact</h1>
+          <p class="section-subtitle">
+            A short message with a bit of context is all we need to start the conversation.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-panel">
+            <h3>Let’s talk about your project</h3>
+            <p>
+              Whether you are exploring ideas, preparing a programme, or looking for independent review
+              of work in progress, we are happy to help shape the next steps.
+            </p>
+
+            <!-- Simple mailto form: submits via email client -->
+            <form class="form" action="mailto:pavanto@gmail.com" method="post" enctype="text/plain">
+              <div>
+                <div class="label">Your name</div>
+                <input class="input" type="text" name="Name" required />
+              </div>
+              <div>
+                <div class="label">Email</div>
+                <input class="input" type="email" name="Email" required />
+              </div>
+              <div>
+                <div class="label">Organisation (optional)</div>
+                <input class="input" type="text" name="Organisation" />
+              </div>
+              <div>
+                <div class="label">How can we help?</div>
+                <textarea class="textarea" name="Message" required></textarea>
+              </div>
+              <div>
+                <button class="btn btn-primary" type="submit">
+                  Send via email
+                  <span class="arrow">↗</span>
+                </button>
+              </div>
+            </form>
+
+            <div class="contact-meta">
+              The form opens your email client. If you prefer, email us directly at
+              <a class="inline-link" href="mailto:pavanto@gmail.com">pavanto@gmail.com</a>.
+            </div>
+          </div>
+
+          <aside class="contact-panel">
+            <h3>Direct details</h3>
+            <p>
+              <strong>Email</strong><br />
+              <a class="inline-link" href="mailto:pavanto@gmail.com">pavanto@gmail.com</a>
+            </p>
+
+            <p style="margin-top:0.8rem;">
+              <strong>LinkedIn</strong><br />
+              <a class="inline-link" href="#" target="_blank" rel="noreferrer">Add your profile link here</a>
+            </p>
+
+            <p style="margin-top:0.8rem;">
+              <strong>Company</strong><br />
+              Vivific Ltd<br />
+              Milton Keynes, United Kingdom
+            </p>
+
+            <p style="margin-top:0.8rem; font-size:0.82rem; color:var(--muted);">
+              We usually respond within a couple of working days. If there are specific timelines or
+              procurement processes, please mention them so we can respond appropriately.
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> Vivific Ltd. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
