@@ -1,143 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Vivific Ltd – Software & Architecture Consulting</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Vivific Ltd is a software and architecture consulting studio helping organisations design, build, and evolve modern digital platforms." />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivific Ltd | Software & Architecture Consulting</title>
+    <meta name="description" content="Vivific is an independent solution architecture consulting firm. We design and deliver modern software platforms.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page">
+
+    <!-- Header -->
     <header>
-      <div class="nav">
-        <div class="nav-left">
-          <div class="logo-mark">V</div>
-          <div class="logo-text">
-            <div class="logo-text-main">Vivific Ltd</div>
-            <div class="logo-text-sub">Software & Architecture Consulting</div>
-          </div>
+        <div class="container nav-wrapper">
+            <a href="index.html" class="logo">
+                <div class="logo-mark">V</div>
+                <span>Vivific Ltd<small>Software & Architecture Consulting</small></span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
-        <nav class="nav-links">
-          <a href="index.html" class="nav-active">Home</a>
-          <a href="services.html">Services</a>
-          <a href="projects.html">Projects</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
     </header>
 
     <main>
-      <section class="section section--hero">
-        <div class="hero">
-          <div>
-            <div class="hero-kicker">Independent technology studio</div>
-            <h1 class="hero-title">
-              We design and deliver <span>modern software platforms</span> that actually ship.
-            </h1>
-            <p class="hero-subtitle">
-              Vivific is a consulting practice focused on software architecture, cloud platforms,
-              and integration. We help organisations turn complex ideas into reliable, maintainable systems.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="contact.html">
-                Schedule a conversation
-                <span class="arrow">↗</span>
-              </a>
-              <a class="btn btn-ghost" href="services.html">
-                Explore our services
-              </a>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <span class="kicker">Independent Technology Studio</span>
+                <h1>We design and deliver modern<br> software platforms that actually ship.</h1>
+                <p class="hero-text">
+                    Vivific specializes in high-impact solution architecture, cloud platforms, and digital delivery. 
+                    We cut through the noise to help organizations build resilient, scalable technology.
+                </p>
+                <div class="btn-group">
+                    <a href="contact.html" class="btn btn-primary">Schedule a conversation</a>
+                    <a href="services.html" class="btn btn-secondary">Explore our services</a>
+                </div>
             </div>
-            <p class="hero-meta">
-              From discovery and architecture to delivery support, we manage a wide range of projects across public and private sectors.
-            </p>
-          </div>
+        </section>
 
-          <aside class="hero-media">
-            <div class="hero-badge-row">
-              <div class="hero-badge">Cloud & Platform Architecture</div>
-              <div class="hero-badge">Data & Integration</div>
-              <div class="hero-badge">Digital Delivery</div>
+        <!-- Value Proposition -->
+        <section>
+            <div class="container">
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>Strategy & Architecture</h3>
+                        <p>We provide clarity in complex environments. From enterprise roadmaps to microservices design, we ensure your technical direction aligns with business goals.</p>
+                        <ul>
+                            <li>Technical Discovery</li>
+                            <li>Solution Design</li>
+                            <li>Legacy Modernization</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3>Cloud & Platforms</h3>
+                        <p>We build foundations for speed. We design cloud-native environments that are secure, compliant, and ready for rapid deployment.</p>
+                        <ul>
+                            <li>AWS / Azure / GCP</li>
+                            <li>Container Platforms</li>
+                            <li>Integration Patterns</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <h3>Delivery & Governance</h3>
+                        <p>Architecture is nothing without delivery. We embed with your teams to provide governance, code-level guidance, and engineering standards.</p>
+                        <ul>
+                            <li>Agile Delivery Support</li>
+                            <li>Technical Governance</li>
+                            <li>Engineering Standards</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <div class="hero-media-image">
-              <!-- Free stock illustration / dashboard-style image -->
-              <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                   alt="Team working with diagrams and laptops" />
+        </section>
+
+        <section style="text-align: center;">
+            <div class="container">
+                <p style="font-size: 1.25rem; color: #fff; max-width: 800px; margin: 0 auto;">
+                    We work with public sector bodies, financial institutions, and ambitious scale-ups to move from 
+                    discovery to live production.
+                </p>
             </div>
-            <div class="hero-media-caption">
-              We work alongside your teams and partners – clarifying architecture, simplifying integrations,
-              and putting strong foundations under digital programmes.
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section section--compact">
-        <div class="section-heading-row">
-          <h2 class="section-title">What we do</h2>
-          <p class="section-subtitle">
-            Our work spans software architecture, cloud platforms, data, and integration. We are comfortable
-            taking ownership of a single system or helping to shape an entire programme.
-          </p>
-        </div>
-
-        <div class="card-grid card-grid--three">
-          <article class="card">
-            <h3>Architecture & Technical Strategy</h3>
-            <p>
-              We help teams define clear target architectures and pragmatic roadmaps that align with business goals and delivery realities.
-            </p>
-            <ul>
-              <li>Architecture assessments and health checks</li>
-              <li>Target state definition and options analysis</li>
-              <li>Documentation, C4 models, and ADRs</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Cloud, Integration & Data Platforms</h3>
-            <p>
-              Vivific designs and evolves platforms centred on AWS, Azure, Kubernetes, event streams, and data services.
-            </p>
-            <ul>
-              <li>Cloud platform and landing zone design</li>
-              <li>Event-driven and API-based integration</li>
-              <li>Data pipelines, streaming, and analytics feeds</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Delivery Support & Governance</h3>
-            <p>
-              We stay close to delivery, working with product, engineering, and vendors to keep architecture
-              decisions grounded and traceable.
-            </p>
-            <ul>
-              <li>Design reviews and solution assurance</li>
-              <li>Hands-on support to unblock delivery teams</li>
-              <li>Patterns, standards, and reference designs</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+        </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <div class="footer-inner">
-        <div>© <span id="year"></span> Vivific Ltd. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="services.html">Services</a>
-          <a href="projects.html">Projects</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Vivific Ltd. All rights reserved.</p>
         </div>
-      </div>
     </footer>
-  </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script>
+        // Simple Mobile Menu Toggle
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav-links');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
